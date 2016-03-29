@@ -30,6 +30,9 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+# installing Vandle ...
+git clone https://github.com/VundleVim/Vundle.vim.git ~/$dir/vim/bundle/Vundle.vim
+
 install_zsh () {
 # Test to see if zshell is installed.  If it is:
 if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
